@@ -47,6 +47,14 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center">
+        <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-8 max-w-4xl mx-auto text-left">
+          <p className="text-xl md:text-2xl font-semibold text-gray-900">
+            Men: Is your partner throwing out perfectly usable, ultra-comfortable briefs?
+          </p>
+          <p className="text-lg text-gray-700 mt-2">
+            You know the ones. They've achieved that perfect level of broken-in comfort. But somehow they keep "disappearing" from your drawer.
+          </p>
+        </div>
         <h2 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
           Pre-Distressed Briefs<br />
           <span className="text-blue-600">Already Broken In</span>
@@ -108,7 +116,7 @@ export default function Home() {
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-4xl mb-4">👋</div>
                 <h4 className="text-xl font-bold mb-2">The Great Purge</h4>
-                <p className="text-gray-600">Your partner mysteriously throws out your favorite pairs.</p>
+                <p className="text-gray-600">Your partner mysteriously throws out your favorite pairs. "These have holes!" they say. "They're comfortable!" you reply.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-4xl mb-4">⏰</div>
@@ -134,9 +142,10 @@ export default function Home() {
                 />
               </div>
               <div className="bg-blue-50 p-8 rounded-lg border-2 border-blue-200">
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">We Have a Solution For You.</h4>
               <p className="text-xl text-gray-700 mb-6">
                 Dadbercrom-Briefs come pre-distressed to perfection. Each pair has been through our proprietary
-                aging process to achieve that ideal 10-year worn-in feel, right out of the package.
+                aging process to achieve that ideal 10-year worn-in feel, right out of the package. Finally, you can buy new underwear that feels old.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -149,11 +158,11 @@ export default function Home() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-2xl mr-3">✓</span>
-                  <span className="text-lg">Replace them guilt-free when they actually fall apart</span>
+                  <span className="text-lg">Replace them when they actually fall apart (not when your partner says to)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-2xl mr-3">✓</span>
-                  <span className="text-lg">Your partner will be horrified (mission accomplished)</span>
+                  <span className="text-lg">Technically brand new. Feels perfectly worn-in. Everyone wins.</span>
                 </li>
               </ul>
               </div>
@@ -197,7 +206,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-4xl font-bold text-gray-900 mb-4 text-center">Join the Waitlist</h3>
             <p className="text-xl text-gray-600 mb-8 text-center">
-              Be the first to know when we launch. Early supporters get 20% off.
+              Be among the first men to experience instant comfort. Early supporters get 20% off.
             </p>
 
             {!submitted ? (
