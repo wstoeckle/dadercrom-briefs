@@ -11,16 +11,26 @@ export default function Home() {
     e.preventDefault();
     setLoading(true);
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
 
-    // Store in localStorage for now
-    const emails = JSON.parse(localStorage.getItem('waitlist') || '[]');
-    emails.push({ email, timestamp: new Date().toISOString() });
-    localStorage.setItem('waitlist', JSON.stringify(emails));
+      if (!response.ok) {
+        throw new Error('Failed to join waitlist');
+      }
 
-    setSubmitted(true);
-    setLoading(false);
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Error joining waitlist:', error);
+      alert('Something went wrong. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
